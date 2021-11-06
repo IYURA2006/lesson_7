@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+}
+
+main {
+  max-width: 520px;
+  width: 100%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ccc;
+  background-color: #f2f2f2;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: ;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+button {
+  font-family: inherit;
+}
+
+.main-header {
+  color: orange;
+}
+.danger {
+  color: orange;
+}
+
+form{
+    margin-top: 30px;
+    position: relative;
+}
+
+form::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+input[type="text"]{
+    display: block;
+    width: 50%;
+    min-width: 100px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+input[type="text"]:focus { 
+    outline-color: orangered;
+}
+input[type="text"]::placeholder { 
+    color: orangered;
+    opacity: 0.6;
+}
+input[type="text"]:focus::placeholder { 
+    opacity: 1;
+}
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.5em;
+    margin-top: 10px;
+}
+input[type="radio"]:checked + span{
+    color: red;
+}
+
+input[type="radio"]{
+    width= 0;
+    height= 0;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+input[type="radio"]::before {
+    content: "";
+    display:inline-block;
+    width: 16px;
+    height: 16px;px;
+    background: grey ;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+input[type="radio"]:checked::before{
+    border-color: red;
+    background: white;
+}
+
+button[type="submit"]{
+    display: block;
+    width: 150 px;
+    margin top: 10px;
+    margin-left: auto;
+    background: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    border-color: red;
+    color: red;
+}
